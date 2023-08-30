@@ -24,7 +24,7 @@ data:
         Mem_Buf_Limit     5MB
         Skip_Long_Lines   On
         Refresh_Interval  10
-output-elasticsearch.conf: |
+  output-elasticsearch.conf: |
     [OUTPUT]
         Name            es
         Match           *
@@ -33,7 +33,7 @@ output-elasticsearch.conf: |
         Logstash_Format On
         Logstash_Prefix fluent-bit
         Retry_Limit     False
-parsers.conf: |
+  parsers.conf: |
     [PARSER]
         Name        docker
         Format      json
